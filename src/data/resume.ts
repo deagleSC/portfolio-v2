@@ -1,6 +1,7 @@
 import { Experience } from "@/components/cards/experience-card";
 import { Project } from "@/components/cards/project-card";
 import quietspace from "@/assets/quietspace-screenshot.png";
+import nimbus from "@/assets/nimbus-screenshot.png"
 
 export const experiences: Experience[] = [
   {
@@ -35,6 +36,15 @@ export const projects: Project[] = [
       "Full-stack mental wellbeing app for mood tracking, journaling, and AI-assisted reflection. Features AI companion chat with historical context and goal tracking.",
     imageUrl: quietspace,
     projectUrl: "https://quietspace-tan.vercel.app",
+    skills: ["Next.js", "Supabase", "Gemini", "Vercel AI SDK", "Zustand", "shadcn/ui"],
+  },
+  {
+    id: "2",
+    title: "Nimbus AI",
+    description:
+      "AI-powered chess learning platform that helps you analyze your games, identify mistakes, and improve through personalized puzzles.",
+    imageUrl: nimbus,
+    projectUrl: "https://nimbus-chess-v2.vercel.app",
     skills: ["Next.js", "Supabase", "Gemini", "Vercel AI SDK", "Zustand", "shadcn/ui"],
   },
 ];

@@ -39,7 +39,15 @@ export function Nav() {
             <Link
               href={item.href}
               className="group flex items-center py-3"
-              onClick={() => setActiveSection(item.href.substring(1))}
+              onClick={(e) => {
+                e.preventDefault();
+                const targetId = item.href.substring(1);
+                const element = document.getElementById(targetId);
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  setActiveSection(targetId);
+                }
+              }}
             >
               <span className={cn(
                 "mr-4 h-px w-8 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none",

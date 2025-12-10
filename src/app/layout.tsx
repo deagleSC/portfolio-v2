@@ -9,8 +9,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Software Engineer",
-  description: "Software Engineer Portfolio",
+  title: "Supratik Chakraborty",
+  description: "SDE @Trumio | Building AI-first web platforms | Full-stack + LLMs",
 };
 
 export default function RootLayout({
