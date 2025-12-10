@@ -10,17 +10,17 @@ import { MouseSpotlight } from "@/components/mouse-spotlight";
 
 export default function Home() {
   return (
-    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:py-20  lg:py-0">
       <MouseSpotlight />
       <div className="lg:flex lg:justify-between lg:gap-4">
-        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 pr-6">
           <div>
             <Header />
             <Nav />
           </div>
           <Socials />
         </header>
-        <main className="pt-24 lg:w-1/2 lg:py-24">
+        <main className="pt-24 lg:w-1/2 lg:py-24 px-6">
           <section
             id="experience"
             className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
